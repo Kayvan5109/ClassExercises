@@ -1,0 +1,31 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy
+
+df = pd.read_csv('AdSales.csv', index_col='Quarter')
+
+print(df.head())
+print(df.info())
+print(df.shape)
+print(df.columns)   
+#What do you understand from these results? 
+##As advertising increases, sales increase 
+##Advertising and Sales both increase as quarters go on 
+df.plot()
+plt.show()
+##Quarter should be the value of the x axis, not a seperate line on the plot
+plt.savefig('adsales_lineplot.png')
+
+
+
+
+##Part 2 
+def sales_plot():
+    df = pd.read_csv('AdSales.csv', index_col='Quarter')
+    print(df.head())
+    print(df.info())
+    print(df.shape)
+    print(df.columns) 
+    df.plot()
+    plt.show()
+    plt.savefig('adsales_lineplot.png')
