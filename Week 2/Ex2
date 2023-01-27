@@ -25,7 +25,7 @@ def sales_plot():
     print(df.head())
     print(df.info())
     print(df.shape)
-    print(df.columns) 
+    print(df.columns)   
     df.plot()
     plt.show()
     plt.savefig('adsales_lineplot.png')
