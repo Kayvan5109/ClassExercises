@@ -29,3 +29,19 @@ def sales_plot():
     df.plot()
     plt.show()
     plt.savefig('adsales_lineplot.png')
+
+
+##Part 3
+def sales_plot(csv_filename, index_col):
+    df = pd.read_csv(csv_filename, index_col=index_col)
+    print(df.head())
+    print(df.info())
+    print(df.shape)
+    print(df.columns)   
+    df.plot()
+    plt.show()
+    plt.savefig('adsales_lineplot.png')
+
+
+
+sales_plot('AdSales.csv', 'Sales')
