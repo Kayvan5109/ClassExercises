@@ -26,8 +26,6 @@ import json
 #    if child['name'] == 'Jenny':
 #        child['age'] = 5
 
-
-
 with open('john.json') as f: 
     my_dict = json.load(f)
     print(json.dumps(my_dict, indent = 4))
